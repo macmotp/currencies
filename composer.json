@@ -1,0 +1,48 @@
+{
+  "name": "macmotp/currencies",
+  "version": "v0.1.0",
+  "description": "Curated list of currencies in PHP",
+  "keywords": [
+    "macmotp",
+    "currencies",
+    "php"
+  ],
+  "homepage": "https://github.com/macmotp/currencies",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Marco Gava",
+      "email": "marco.gava@me.com",
+      "homepage": "https://github.com/macmotp",
+      "role": "Software Engineer"
+    }
+  ],
+  "require": {
+    "php": ">=8.2",
+    "illuminate/collections": ">=10.0"
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^3.21",
+    "phpunit/phpunit": "^10.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Macmotp\\": "src/Currencies"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Macmotp\\Currencies\\Tests\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit --no-coverage",
+    "test-coverage": "vendor/bin/phpunit --coverage-html coverage",
+    "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
