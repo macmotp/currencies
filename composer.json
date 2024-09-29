@@ -1,6 +1,6 @@
 {
   "name": "macmotp/currencies",
-  "version": "v0.1.0",
+  "version": "v0.1.1",
   "description": "Curated list of currencies in PHP",
   "keywords": [
     "macmotp",

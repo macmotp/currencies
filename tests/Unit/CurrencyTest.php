@@ -95,6 +95,9 @@ class CurrencyTest extends TestCase
         $currency = new Currency('USD');
         $this->assertEquals(CurrencyCode::USD->value, $currency->getCode());
 
+        $currency = new Currency('usd');
+        $this->assertEquals(CurrencyCode::USD->value, $currency->getCode());
+
         $currency = Currency::make(CurrencyCode::USD);
         $this->assertEquals(CurrencyCode::USD->value, $currency->getCode());
 
@@ -327,7 +330,7 @@ class CurrencyTest extends TestCase
             [CurrencyCode::AFN, true, false, false, true, true, '.', ',', 2, 2],
             [CurrencyCode::ALL, true, false, true, false, true, '.', ',', 2, 2],
             [CurrencyCode::AMD, true, false, false, true, false, '.', ',', 2, 2],
-            [CurrencyCode::ANG, true, false, false, true, false, ',', '.', 2, 2],
+            [CurrencyCode::ANG, true, false, false, true, true, ',', '.', 2, 2],
             [CurrencyCode::AOA, true, false, true, false, false, '.', ',', 2, 2],
             [CurrencyCode::ARS, true, false, true, true, false, ',', '.', 2, 2],
             [CurrencyCode::AUD, true, false, false, true, true, '.', ',', 2, 2],

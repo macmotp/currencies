@@ -176,7 +176,7 @@ final class CurrencyFactory
     {
         if (is_string($code)) {
             try {
-                $code = CurrencyCode::from($code);
+                $code = CurrencyCode::from(strtoupper($code));
             } catch (ValueError $e) {
                 return throw new InvalidCurrencyCodeException($e->getMessage());
             }
