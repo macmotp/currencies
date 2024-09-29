@@ -34,8 +34,7 @@ class CurrencyTest extends TestCase
         string       $outputCode,
         string       $outputSymbol,
         string       $outputFlag,
-    ): void
-    {
+    ): void {
         $currency = new Currency($inputCurrency);
 
         $this->assertEquals($outputName, $currency->getName());
@@ -71,8 +70,7 @@ class CurrencyTest extends TestCase
         string       $thousandsSeparator,
         int          $numberOfDecimals,
         int          $subunitLevel,
-    ): void
-    {
+    ): void {
         $currency = new Currency($inputCurrency);
 
         $this->assertEquals(new CurrencyFormat(
