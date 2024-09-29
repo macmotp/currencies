@@ -25,7 +25,7 @@ final class ANG extends AbstractCurrency implements CurrencyInterface
             showCode: false,
             showSpace: false,
             showSymbolOrCodeOnLeft: true,
-            showDecimals: false,
+            showDecimals: true,
             decimalSeparator: ',',
             thousandsSeparator: '.',
             numberOfDecimals: 2,
