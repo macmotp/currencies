@@ -2,8 +2,6 @@
 
 namespace Macmotp\Support\Currencies\Formats;
 
-use Macmotp\Support\CurrencyInterface;
-
 /**
  * CurrencyFormat Class
  */
@@ -32,8 +30,7 @@ final class CurrencyFormat
         private string $thousandsSeparator,
         private int $numberOfDecimals,
         private int $subunitLevel,
-    )
-    {
+    ) {
         //
     }
 

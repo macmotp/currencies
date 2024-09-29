@@ -126,22 +126,22 @@ final class CurrencyFormatFactory
 
             // All the following have default format:
             CurrencyCode::AED,
-                => self::applyDefaultFormat()
-                ->setShowSymbol(true)
-                ->setShowCode(false)
-                ->setShowSpace(false)
-                ->setShowSymbolOrCodeOnLeft(true)
-                ->setShowDecimals(true)
-                ->setDecimalSeparator('.')
-                ->setThousandsSeparator(',')
-                ->setNumberOfDecimals(2)
-                ->setSubunitLevel(2),
+            => self::applyDefaultFormat()
+            ->setShowSymbol(true)
+            ->setShowCode(false)
+            ->setShowSpace(false)
+            ->setShowSymbolOrCodeOnLeft(true)
+            ->setShowDecimals(true)
+            ->setDecimalSeparator('.')
+            ->setThousandsSeparator(',')
+            ->setNumberOfDecimals(2)
+            ->setSubunitLevel(2),
 
             CurrencyCode::GYD
             => self::applyDefaultFormat()
 
         ->setShowDecimals(false)
-        ,
+            ,
             // CurrencyCode::AFN,
             // CurrencyCode::AUD,
             // CurrencyCode::AZN,
