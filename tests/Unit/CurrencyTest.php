@@ -1,6 +1,6 @@
 <?php
 
-namespace Macmotp\Currency\Tests\Unit;
+namespace Unit;
 
 use Illuminate\Support\Collection;
 use Macmotp\Currencies\Exceptions\InvalidCurrencyCodeException;
