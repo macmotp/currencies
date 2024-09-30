@@ -3,11 +3,11 @@
 namespace Macmotp;
 
 use Illuminate\Support\Collection;
-use Macmotp\Exceptions\InvalidCurrencyCodeException;
-use Macmotp\Support\Currencies\Formats\CurrencyFormat;
-use Macmotp\Support\CurrencyCode;
-use Macmotp\Support\CurrencyFactory;
-use Macmotp\Support\CurrencyInterface;
+use Macmotp\Currencies\Exceptions\InvalidCurrencyCodeException;
+use Macmotp\Currencies\Support\CurrencyCode;
+use Macmotp\Currencies\Support\CurrencyFactory;
+use Macmotp\Currencies\Support\CurrencyFormat;
+use Macmotp\Currencies\Support\CurrencyInterface;
 
 /**
  * Class Currency
