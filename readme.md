@@ -27,8 +27,8 @@ composer require macmotp/currencies
 ### Create Currency objects
 ``` php
 use Macmotp\Currency;
-use Macmotp\Support\CurrencyCode;
-use Macmotp\Support\CurrencyName;
+use Macmotp\Currencies\Support\CurrencyCode;
+use Macmotp\Currencies\Support\CurrencyName;
 
 // All Currencies adopt ISO 4217 standard
 $currencyCode = CurrencyCode::USD;

@@ -1,12 +1,12 @@
 <?php
 
-namespace Macmotp\Currency\Tests\Unit;
+namespace Unit;
 
 use Illuminate\Support\Collection;
+use Macmotp\Currencies\Exceptions\InvalidCurrencyCodeException;
+use Macmotp\Currencies\Support\CurrencyCode;
+use Macmotp\Currencies\Support\CurrencyFormat;
 use Macmotp\Currency;
-use Macmotp\Exceptions\InvalidCurrencyCodeException;
-use Macmotp\Support\Currencies\Formats\CurrencyFormat;
-use Macmotp\Support\CurrencyCode;
 use PHPUnit\Framework\TestCase;
 
 /**
