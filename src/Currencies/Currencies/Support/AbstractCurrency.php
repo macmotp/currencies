@@ -2,10 +2,12 @@
 
 namespace Macmotp\Currencies\Support;
 
+use Illuminate\Contracts\Support\Arrayable;
+
 /**
  * AbstractCurrency abstract class
  */
-abstract class AbstractCurrency implements CurrencyInterface
+abstract class AbstractCurrency implements Arrayable, CurrencyInterface
 {
     private CurrencyName $name;
     private CurrencyCode $code;
@@ -21,10 +23,10 @@ abstract class AbstractCurrency implements CurrencyInterface
     public function toArray(): array
     {
         return [
-            'name' => $this->getName(),
-            'code' => $this->getCode(),
+            'name' => $this->getName()->value,
+            'code' => $this->getCode()->value,
             'symbol' => $this->getSymbol(),
-            'flag' => $this->getFlag(),
+            'flag' => $this->getFlag()->value,
             'format' => $this->getFormat()->toArray(),
         ];
     }
